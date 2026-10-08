@@ -1,11 +1,18 @@
 
 import './App.css'
+import Header from './components/Header'
+import Statistics from './components/Statistics'
+import StudentsList from './components/StudentsList'
 
 function App() {
 
 
   return (
-    <h1>text</h1>
+    <div className='app'>
+      <Header/>
+      <Statistics/>
+      <StudentsList/>
+    </div>
   )
 }
 
