@@ -19,8 +19,8 @@ function StudentsList() {
 " 
         name = "Hana Krasniqi"
         title = "Back End"
-        grade = {9}
-        result = "Passed"
+        grade = {4}
+        result = "Failed"
         project = {9}
         progress = {88}
         />
