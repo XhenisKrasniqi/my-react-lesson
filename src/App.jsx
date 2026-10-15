@@ -1,5 +1,7 @@
 
 import './App.css'
+import Header from './components/Header'
+import MovieList from './components/MovieList'
 
 
 function App() {
@@ -7,7 +9,14 @@ function App() {
 
   return (
 
-    <div></div>
+    <div>
+      <div className='app'>
+         <Header/>
+         <MovieList/>
+      </div>
+ 
+     
+    </div>
   )
 }
 
