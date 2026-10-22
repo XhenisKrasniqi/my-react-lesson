@@ -1,5 +1,8 @@
 
 import './App.css'
+import Form from './components/Form'
+import Input from './components/Input'
+import Password from './components/Password'
 
 
 function App() {
@@ -7,7 +10,11 @@ function App() {
 
   return (
 
-    <div></div>
+    <div>
+      <Input/>
+      <Password/>
+      <Form/>
+    </div>
   )
 }
 
