@@ -1,0 +1,137 @@
+
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+}
+
+/* Form container */
+.form-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Form title */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e293b;
+    font-size: 26px;
+}
+
+/* Form control */
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+/* Labels */
+.form-control label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+/* Inputs and select */
+.form-control input:not([type="checkbox"]),
+.form-control select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+    background: #ffffff;
+    color: #1e293b;
+}
+
+/* Focus effect */
+.form-control input:focus,
+.form-control select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Error messages */
+.form-control p {
+    color: #dc2626;
+    font-size: 13px;
+    margin: 6px 0 0;
+}
+
+/* Checkbox */
+.form-control input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #2563eb;
+}
+
+/* Checkbox label */
+.form-control:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-control:has(input[type="checkbox"]) label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* Checkbox error */
+.form-control:has(input[type="checkbox"]) p {
+    flex-basis: 100%;
+    margin-top: 0;
+}
+
+/* Register button */
+button[type="submit"] {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+button[type="submit"]:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Button active */
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .form-container {
+        width: 90%;
+        margin: 25px auto;
+        padding: 22px;
+    }
+}

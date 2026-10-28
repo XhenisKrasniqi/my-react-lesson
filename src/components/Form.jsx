@@ -8,10 +8,17 @@ function Form() {
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
 
     function handleSubmit(e){
     e.preventDefault()
-    console.log(firstName, lastName , email , password);
+        setError(
+        firstName === ""
+            ? "Name is required"
+            : lastName === ""
+            ? "Lastname is required"
+            : ""
+        )
     }
 
 
@@ -37,6 +44,7 @@ function Form() {
         <button type="Submit">
             create
         </button>
+        <p>{error}</p>
     </form>
 
     <p>First name: {firstName}</p>
