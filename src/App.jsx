@@ -7,6 +7,9 @@ import Password from './components/Password'
 import Radio from './components/Radio'
 import RegisterForm from './components/RegisterForm'
 
+import Header from './components/Header'
+import MovieList from './components/MovieList'
+
 
 function App() {
 
@@ -14,6 +17,7 @@ function App() {
   return (
 
     <div>
+
       {/* <Input/>
       <Password/>
       <Form/>
@@ -21,6 +25,14 @@ function App() {
       <Radio/> */}
 
       <RegisterForm/>
+
+      <div className='app'>
+         <Header/>
+         <MovieList/>
+      </div>
+ 
+     
+
     </div>
   )
 }
