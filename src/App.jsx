@@ -1,5 +1,7 @@
 
 import './App.css'
+import ProductList from './components/Products/ProductList'
+
 
 
 function App() {
@@ -7,7 +9,9 @@ function App() {
 
   return (
 
-    <div></div>
+    <div>
+      <ProductList/>
+    </div>
   )
 }
 
