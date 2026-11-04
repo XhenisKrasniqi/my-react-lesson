@@ -2,6 +2,7 @@
 import './App.css'
 import ProductList from './components/Products/ProductList'
 
+import RegisterForm from './components/RegisterForm'
 import Checkbox from './components/Checkbox'
 import Form from './components/Form'
 import Input from './components/Input'
@@ -20,6 +21,7 @@ function App() {
 
     <div>
       <ProductList/>
+      <RegisterForm/>
 
       {/* <Input/>
       <Password/>
