@@ -1,5 +1,6 @@
 
 import './App.css'
+import RegisterForm from './components/RegisterForm'
 
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
 
   return (
 
-    <div></div>
+    <div>
+      <RegisterForm/>
+    </div>
   )
 }
 
