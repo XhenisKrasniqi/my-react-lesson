@@ -1,3 +1,10 @@
+import React from 'react'
+
+function Input({type, inputPlaceholder,value ,onChange}) {
+  return (
+    <>
+        <input type={type} placeholder={inputPlaceholder} value={value} onChange={onChange}/>
+    </>
 import React, { useState } from 'react'
 
 function Input() {

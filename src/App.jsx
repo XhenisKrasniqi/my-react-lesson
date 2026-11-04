@@ -1,5 +1,6 @@
 
 import './App.css'
+import RegisterForm from './components/RegisterForm'
 import Checkbox from './components/Checkbox'
 import Form from './components/Form'
 import Input from './components/Input'
@@ -17,6 +18,7 @@ function App() {
   return (
 
     <div>
+      <RegisterForm/>
 
       {/* <Input/>
       <Password/>
