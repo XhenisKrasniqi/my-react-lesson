@@ -1,5 +1,7 @@
 
 import './App.css'
+import ProductList from './components/Products/ProductList'
+
 import RegisterForm from './components/RegisterForm'
 import Checkbox from './components/Checkbox'
 import Form from './components/Form'
@@ -18,6 +20,7 @@ function App() {
   return (
 
     <div>
+      <ProductList/>
       <RegisterForm/>
 
       {/* <Input/>
