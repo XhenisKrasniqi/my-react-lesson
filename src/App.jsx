@@ -5,6 +5,7 @@ import Home from './pages/home'
 import About from './pages/About'
 import Courses from './pages/Courses'
 import NotFound from './pages/NotFound'
+import Contact from './pages/Contact'
 import ProductList from './components/Products/ProductList'
 
 import RegisterForm from './components/RegisterForm'
@@ -24,15 +25,24 @@ function App() {
 
   return (
     <>
-    <nav>
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/courses'>Courses</Link>
+    <nav >
+      <div>
+      <Link to='/'>Logo</Link>
+      
+      </div>
+      <div>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/courses'>Courses</Link>
+        <Link to='/contact'>Contact</Link>
+      </div>
+
     </nav>
       <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/about' element={<About />}/>
       <Route path='/courses' element={<Courses />}/>
+      <Route path='/contact' element={<Contact />}/>
       <Route path='/*' element={<NotFound />}/>
       </Routes>
     </>
