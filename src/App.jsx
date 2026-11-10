@@ -1,4 +1,7 @@
 
+import { useEffect, useState } from 'react'
+import './App.css'
+import Users from './components/Users'
 import { Routes , Route , Link} from 'react-router-dom'
 import './App.css'
 import Home from './pages/home'
@@ -21,6 +24,17 @@ import MovieList from './components/MovieList'
 
 
 function App() {
+  const[users , setUsers] = useState([]);
+  const[errors, setErrors ] = useState(null);
+  useEffect(() =>{
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response)=>response.json())
+    .then((res) => {
+      setUsers(res);
+    }).catch((errors) => {
+      setErrors(errors);
+    });
+  },[]);
 
 
   return (
@@ -66,6 +80,13 @@ function App() {
  
      
 
+    <div className='main'>
+         <Users users={users}/>
+        <p>{errors}</p>
+
+      </div>      
+ 
+  ) 
     </div>
   )
 }
