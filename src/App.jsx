@@ -22,6 +22,12 @@ return (
 
 import { useEffect, useState } from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
+import Repositories from './pages/Repositories'
+import Home from './pages/Home'
+import { Routes, Route } from 'react-router-dom'
+import RepoDetails from './pages/RepoDetails'
+
 import Users from './components/Users'
 import { Routes , Route , Link} from 'react-router-dom'
 import './App.css'
@@ -59,6 +65,13 @@ function App() {
 
 
   return (
+    <div className="container">
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/repos" element={<Repositories />} />
+      <Route path="/repos/:username/:repoName" element={<RepoDetails />} />
+    </Routes>
     <>
     <nav >
       <div>

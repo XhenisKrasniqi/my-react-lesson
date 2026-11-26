@@ -2,6 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
+  return (
+    <div className='navbar'>
+        <h2>My github</h2>
+        <div>
+            <Link to="/">Home</Link>
+            <Link to="/repos">Repositories</Link>
+        </div>
+    </div>
+  )
 return (
 <div className='navbar'>
 <h2>My Project</h2>
