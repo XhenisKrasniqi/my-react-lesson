@@ -1,3 +1,24 @@
+import './App.css'
+import Navbar from './components/Navbar'
+import Projects from './pages/Projects'
+import Home from './pages/Home'
+import { Routes, Route } from 'react-router-dom'
+
+
+
+
+function App() {
+
+
+return (
+<div className="container">
+<Navbar />
+<Routes>
+<Route path="/" element={<Home />} />
+<Route path="/projects" element={<Projects />} />
+</Routes>
+</div>
+)
 
 import { useEffect, useState } from 'react'
 import './App.css'
